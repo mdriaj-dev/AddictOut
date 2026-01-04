@@ -9,84 +9,79 @@
       --primary-color: #1a73e8;
       --text-main: #2c3e50;
       --text-light: #5f6368;
-      --bg-color: #f8f9fa;
+      --bg-color: #f4f7f9;
       --container-bg: #ffffff;
     }
     body {
-      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
       margin: 0;
-      padding: 40px 20px;
+      display: flex; /* মাঝখানে আনার জন্য */
+      justify-content: center; 
+      align-items: flex-start; 
+      min-height: 100vh;
       background-color: var(--bg-color);
       color: var(--text-main);
+      padding: 40px 20px;
     }
     .container {
-      max-width: 850px;
-      margin: auto;
+      max-width: 800px;
+      width: 100%;
       background: var(--container-bg);
-      padding: 50px 60px;
+      padding: 40px 50px;
       border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      text-align: left; /* সব লেখা বামপাশে রাখার জন্য */
     }
     .header {
-      border-bottom: 2px solid #eee;
+      border-bottom: 2px solid #f0f0f0;
       padding-bottom: 20px;
       margin-bottom: 30px;
     }
     h1 {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       margin: 0;
       color: #111;
     }
     .effective-date {
       color: var(--text-light);
-      font-size: 0.95rem;
-      margin-top: 10px;
+      font-size: 0.9rem;
+      margin-top: 8px;
     }
     h2 {
-      font-size: 1.4rem;
-      margin-top: 35px;
+      font-size: 1.3rem;
+      margin-top: 30px;
+      margin-bottom: 15px;
       color: #111;
-      border-left: 4px solid var(--primary-color);
-      padding-left: 15px;
+      font-weight: 600;
     }
     p, li {
       color: var(--text-light);
-      font-size: 1.05rem;
+      font-size: 1rem;
+      margin-bottom: 15px;
     }
     ul {
-      padding-left: 25px;
-    }
-    li {
-      margin-bottom: 12px;
+      padding-left: 20px;
+      list-style-type: disc;
     }
     .service-links a {
       color: var(--primary-color);
       text-decoration: none;
       font-weight: 500;
-      transition: 0.3s;
     }
     .service-links a:hover {
       text-decoration: underline;
     }
-    .highlight-box {
-      background-color: #f1f7ff;
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px inset #d1e3ff;
-      margin: 20px 0;
-    }
     .footer {
       margin-top: 50px;
       padding-top: 20px;
-      border-top: 1px solid #eee;
-      text-align: center;
-      font-size: 0.9rem;
+      border-top: 1px solid #f0f0f0;
+      font-size: 0.85rem;
       color: var(--text-light);
     }
     @media (max-width: 600px) {
       .container { padding: 30px 20px; }
-      h1 { font-size: 1.8rem; }
+      h1 { font-size: 1.7rem; }
     }
   </style>
 </head>
@@ -98,43 +93,34 @@
       <p class="effective-date">Effective Date: December 24, 2025</p>
     </div>
 
-    <p>Welcome to <strong>AddictOut</strong>. Your privacy is critically important to us. This policy explains how we handle data within our application.</p>
+    <p>Welcome to <strong>AddictOut</strong>. We value your privacy and are committed to protecting the data generated while you use our application.</p>
 
-    <h2>1. Data Collection & Usage</h2>
-    <p>AddictOut is designed to respect your anonymity. We do not require any account registration, and we do not collect personal information such as your name, email address, or phone number.</p>
-    <div class="highlight-box">
-      <strong>Note:</strong> To provide essential app services and advertisements, we use third-party tools that may automatically collect:
-      <ul>
-        <li>Device identifiers (Advertising IDs)</li>
-        <li>Operating system information</li>
-        <li>Basic app usage statistics</li>
-      </ul>
-    </div>
+    <h2>1. Information Collection</h2>
+    <p>AddictOut does not require users to create an account or provide personal information such as name, email, or phone number. All your progress data is stored locally on your device.</p>
 
     <h2>2. Third-Party Services</h2>
-    <p>For the best user experience and app maintenance, we integrate the following services:</p>
+    <p>To ensure app functionality and display relevant advertisements, we use the following third-party services:</p>
     <ul class="service-links">
       <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
       <li><a href="https://policies.google.com/privacy" target="_blank">Google AdMob</a></li>
     </ul>
 
-    <h2>3. Local Storage & Data Control</h2>
-    <p>All your progress, including streaks, goals, and history, is stored <strong>locally on your device</strong>. We do not have access to this data on our servers.</p>
-    <p>As shown in our app settings, you have full control over your data. You may use the <strong>"Reset All Progress"</strong> feature at any time to permanently wipe all stored information from your device.</p>
+    <h2>3. Data Control & Deletion</h2>
+    <p>Since your data is stored locally, you have total control over it. You can erase all records, history, and streaks at any time by selecting the <strong>"Reset All Progress"</strong> option in the app menu.</p>
 
-    <h2>4. Health & Medical Disclaimer</h2>
-    <p>AddictOut is a motivational tool for self-improvement and is not a medical device. It does not provide professional medical advice, diagnosis, or treatment for addiction. Always consult with a healthcare professional for clinical support.</p>
+    <h2>4. Health Disclaimer</h2>
+    <p>AddictOut provides motivational content and progress tracking. It is not intended to provide medical advice or professional treatment for addiction. Please consult a qualified health professional for medical concerns.</p>
 
-    <h2>5. Children’s Privacy</h2>
-    <p>Our app is suitable for users aged 13 and above. We do not knowingly collect personal data from children. Our third-party partners handle data in compliance with their own privacy regulations for minors.</p>
+    <h2>5. Children's Privacy</h2>
+    <p>Our app is safe for users aged 13 and above. We do not intentionally collect data from children under this age.</p>
 
-    <h2>6. Contact Information</h2>
-    <p>If you have any questions regarding this policy, please feel free to reach out to us:</p>
-    <p><strong>Email:</strong> <a href="mailto:officialappsconnect@gmail.com" style="color: var(--primary-color);">officialappsconnect@gmail.com</a></p>
+    <h2>6. Contact Us</h2>
+    <p>If you have questions about this policy, contact us at:<br>
+    <strong>Email:</strong> <a href="mailto:officialappsconnect@gmail.com" style="color: var(--primary-color);">officialappsconnect@gmail.com</a></p>
 
     <div class="footer">
-      <p>&copy; 2025 AddictOut. All rights reserved.</p>
-      <p>Last Updated: 2025-12-24</p>
+      &copy; 2025 AddictOut. All rights reserved.<br>
+      Last Updated: 2025-12-24
     </div>
   </div>
 
